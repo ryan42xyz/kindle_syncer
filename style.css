@@ -1,0 +1,258 @@
+/* Kindle-optimized styles */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 18pt;
+    line-height: 1.8;
+    margin: 0 auto;
+    padding: 1.5em;
+    max-width: 45em;
+}
+
+h1 {
+    font-size: 28pt;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+    page-break-before: always;
+    border-bottom: 2px solid #666;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 24pt;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #999;
+    padding-bottom: 0.2em;
+}
+
+h3 {
+    font-size: 20pt;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+p {
+    margin: 1em 0;
+    text-align: left;
+    line-height: 1.8;
+}
+
+/* Code blocks */
+pre {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 1em;
+    margin: 1.5em 0;
+    font-family: 'Courier New', monospace;
+    font-size: 16pt;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    font-size: 16pt;
+    background-color: #f5f5f5;
+    padding: 0.2em 0.4em;
+    border-radius: 2px;
+}
+
+/* Lists */
+ul, ol {
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.8em;
+    line-height: 1.6;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    font-size: 16pt;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.8em;
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+/* Blockquotes */
+blockquote {
+    margin: 1.5em 0;
+    padding-left: 1em;
+    border-left: 4px solid #999;
+    color: #333;
+    font-style: italic;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em auto;
+    display: block;
+}
+
+/* Links */
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Page breaks */
+h1, h2 {
+    page-break-before: always;
+}
+
+/* Avoid page breaks inside */
+pre, blockquote, table {
+    page-break-inside: avoid;
+}
+
+/* Base styles */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    page-break-after: avoid;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+}
+
+/* Code blocks */
+code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    background-color: #f6f8fa;
+    padding: 0.2em 0.4em;
+    font-size: 85%;
+}
+
+pre {
+    background-color: #f6f8fa;
+    padding: 16px;
+    margin: 1em 0;
+    page-break-inside: avoid;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Links */
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+/* Blockquotes */
+blockquote {
+    margin: 1em 0;
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+    page-break-inside: avoid;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    page-break-inside: avoid;
+}
+
+th, td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+th {
+    background-color: #f6f8fa;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    margin: 1em 0;
+    page-break-inside: avoid;
+}
+
+/* Table of Contents */
+#TOC {
+    background-color: #f5f5f5;
+    padding: 1.5em;
+    margin: 2em 0;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+#TOC ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#TOC ul ul {
+    padding-left: 1.5em;
+}
+
+#TOC a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Print-specific styles */
+@page {
+    margin: 1.5cm;
+}
+
+@media print {
+    body {
+        font-size: 18pt;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    
+    pre, blockquote, table, figure {
+        page-break-inside: avoid;
+    }
+    
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+} 

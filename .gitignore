@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# Env files / secrets
+.env
+
+# Project artifacts
+src.bk/
+*.pdf
+
+# Local input / personal materials (do not commit)
+src/
+kindle_book_transfer/
+
+# Local scratch files
+create_test_pdf.py
+test_local.md
+
+# OS / editor
+.DS_Store
+Thumbs.db

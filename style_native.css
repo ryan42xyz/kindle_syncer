@@ -1,0 +1,157 @@
+/* Native PDF styles - minimal and clean */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 12pt;
+    line-height: 1.4;
+    margin: 2cm;
+    max-width: none;
+    color: #333;
+}
+
+h1 {
+    font-size: 24pt;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #000;
+}
+
+h2 {
+    font-size: 18pt;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    color: #000;
+}
+
+h3 {
+    font-size: 14pt;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+    color: #000;
+}
+
+p {
+    margin: 0.8em 0;
+    text-align: justify;
+}
+
+/* Code blocks */
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0.8em;
+    margin: 1em 0;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 11pt;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 11pt;
+    background-color: #f8f8f8;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+/* Lists */
+ul, ol {
+    margin: 0.8em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.4em;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    font-size: 11pt;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.6em;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+/* Blockquotes */
+blockquote {
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 3px solid #ddd;
+    color: #666;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em auto;
+    display: block;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Table of Contents */
+#TOC {
+    background-color: #f8f8f8;
+    padding: 1em;
+    margin: 1em 0 2em 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#TOC ul {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+#TOC ul ul {
+    padding-left: 1.5em;
+}
+
+#TOC a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+/* Print-specific styles */
+@page {
+    margin: 2cm;
+}
+
+@media print {
+    body {
+        font-size: 12pt;
+    }
+    
+    pre, code {
+        font-size: 11pt;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote, table, figure {
+        page-break-inside: avoid;
+    }
+    
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+} 
