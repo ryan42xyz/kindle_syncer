@@ -1,4 +1,4 @@
-# Agent Guide (toys/kindlesyncer)
+# Agent Guide (toys/kindle_syncer)
 
 This folder is a small Python CLI + helper scripts for converting Markdown to PDF and emailing PDFs to a Kindle address.
 
@@ -46,7 +46,7 @@ These scripts exist and are commonly used:
 Notes:
 
 - The shell scripts hardcode `SCRIPT_DIR=/Users/rshao/work/code_repos/kindlesyncer`.
-  - In this repo checkout the path is typically `/Users/rshao/work/code_repos/personal/toys/kindlesyncer`.
+  - In this repo checkout the path is typically `/Users/rshao/work/code_repos/personal/toys/kindle_syncer`.
   - If the scripts fail due to path mismatch, update `SCRIPT_DIR` (or stop using the scripts and run the Python entrypoints directly).
 
 ## Common Workflows
